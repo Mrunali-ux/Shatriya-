@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\HP\OneDrive\Apps\openCV\logo1.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sign Language Translator</h1>
+            <p>Break barriers with real-time AI-powered sign language translation.</p>
+            <p> </p>
+            <a href="start.html" class="get-started">Get Started</a>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(0)">🔍 How does it work?</h3>
+            <p class="answer">Our AI-powered system translates sign language gestures into text using a webcam.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(1)">💰 Is it free?</h3>
+            <p class="answer">Yes! We aim to make sign language gesture accessible for everyone.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(2)">🖥 Do I need to install anything?</h3>
+            <p class="answer">No installation required! The tool runs directly in your web browser.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleFAQ(index) {
+            let answers = document.querySelectorAll(".answer");
+            answers[index].classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
